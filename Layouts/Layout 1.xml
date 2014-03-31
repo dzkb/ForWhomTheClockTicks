@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>GameMenu</name>
+    <name>Layout 1</name>
     <sid>8247871153288592</sid>
-    <event-sheet>Menu EventSheet</event-sheet>
+    <event-sheet>Event sheet 1</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>

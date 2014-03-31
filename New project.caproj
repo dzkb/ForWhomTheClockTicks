@@ -37,12 +37,10 @@
     <object-folder expanded="1" />
     <families />
     <layout-folder expanded="1">
-        <layout>GameMenu.xml</layout>
-        <layout>Level 1.xml</layout>
+        <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-sheet>Menu EventSheet.xml</event-sheet>
-        <event-sheet>Level 1 EventSheet.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder expanded="1" />
