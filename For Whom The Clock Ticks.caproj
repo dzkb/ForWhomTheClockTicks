@@ -21,7 +21,9 @@
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -73,16 +75,19 @@
         <object-type name="MainLogo" sid="4787754756100366">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite" sid="2877966327862215">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9966569987640898" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="MainCharacter" sid="3926210014329629">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="FreeToMove" sid="6076864328514626" type="boolean" />
+                <instance-variable comment="Zmienna" name="Zmienna" sid="9624762908705854" type="string" />
+                <instance-variable name="TargetPosX" sid="1200495692255852" type="number" />
+                <instance-variable name="TragetPosY" sid="5421250822001197" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="9743297867633814">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8801652075792926" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -111,6 +116,7 @@
         <event-sheet>MenuEv.xml</event-sheet>
         <event-sheet>Level1-mainEv.xml</event-sheet>
         <event-sheet>Intro.xml</event-sheet>
+        <event-sheet>PlayerMovement.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="1" />
@@ -145,8 +151,15 @@
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
-    <files-folder expanded="1">
-        <file-folder expanded="1" name="Icons" />
+    <files-folder expanded="0">
+        <file-folder expanded="1" name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
         <file name="stylesheet.css" />
         <file name="uni0553-webfont-webfont.eot" />
         <file name="uni0553-webfont-webfont.svg" />

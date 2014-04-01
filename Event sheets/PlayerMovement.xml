@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>PlayerMovement</name>
+    <events>
+        <event-block sid="1976664319662091">
+            <conditions>
+                <condition id="0" name="On any touch start" sid="7860786270978829" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="3581246150236385" type="MainCharacter">
+                    <param id="0" name="Instance variable">TargetPosX</param>
+                    <param id="1" name="Value">Touch.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="1408437764819566" type="MainCharacter">
+                    <param id="0" name="Instance variable">TragetPosY</param>
+                    <param id="1" name="Value">Touch.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8943364135334667">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="381591314484318" type="System" />
+                <condition id="-8" name="Is boolean instance variable set" sid="6432265615201136" type="MainCharacter">
+                    <param id="0" name="Instance variable">FreeToMove</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="0" name="Stop" sid="2467807540961037" type="MainCharacter" />
+                <action behavior="CustomMovement" id="5" name="Accelerate toward position" sid="8791898133013818" type="MainCharacter">
+                    <param id="0" name="Acceleration">10000</param>
+                    <param id="1" name="X">MainCharacter.TargetPosX</param>
+                    <param id="2" name="Y">MainCharacter.TragetPosY</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

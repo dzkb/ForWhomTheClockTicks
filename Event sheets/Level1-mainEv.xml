@@ -2,5 +2,18 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level1-mainEv</name>
-    <events />
+    <events>
+        <include>PlayerMovement</include>
+        <event-block sid="212535210585535">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5693055135271592" type="System" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="3593632653009413" type="MainCharacter">
+                    <param id="0" name="Instance variable">FreeToMove</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
