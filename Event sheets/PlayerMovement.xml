@@ -34,5 +34,37 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="4737372430412996">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5030659250950274" type="System" />
+                <condition behavior="CustomMovement" id="0" name="Is moving" sid="9487528477003787" type="MainCharacter" />
+                <condition id="-7" name="Compare instance variable" sid="4345951583139163" type="MainCharacter">
+                    <param id="0" name="Instance variable">TargetPosX</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">MainCharacter.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="738085378342943" type="MainCharacter">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5774199289901345">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6869556503116481" type="System" />
+                <condition behavior="CustomMovement" id="0" name="Is moving" sid="5147214679168525" type="MainCharacter" />
+                <condition id="-7" name="Compare instance variable" sid="6553807675885001" type="MainCharacter">
+                    <param id="0" name="Instance variable">TargetPosX</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">MainCharacter.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="8191629068428091" type="MainCharacter">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
