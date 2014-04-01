@@ -55,11 +55,11 @@
                         <x>237</x>
                         <y>185</y>
                         <z>0</z>
-                        <width>59.738182068</width>
-                        <height>92.697174072</height>
+                        <width>32.958995819</width>
+                        <height>77.247642517</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.59375</hotspotX>
+                        <hotspotY>0.49333334</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
