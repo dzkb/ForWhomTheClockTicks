@@ -92,7 +92,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8801652075792926" speed="5">
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="8801652075792926" speed="5">
                     <frame duration="1" hotspotX="0.59375" hotspotY="0.493333" />
                 </animation>
                 <animation framecount="11" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="3670673517960258" speed="8">
@@ -107,6 +107,22 @@
                     <frame duration="1" hotspotX="0.512821" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.512821" hotspotY="0.5" />
                     <frame duration="0.5" hotspotX="0.512821" hotspotY="0.5" />
+                </animation>
+                <animation framecount="7" loop="0" name="Guitar_PullOut" pingpong="0" repeatcount="1" repeatto="0" sid="753696995749222" speed="10">
+                    <frame duration="1" hotspotX="0.385714" hotspotY="0.486486">
+                        <collision-poly>
+                            <point x="0.0285714" y="0" />
+                            <point x="0.971429" y="0" />
+                            <point x="0.971429" y="1" />
+                            <point x="0.0285714" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.378788" hotspotY="0.486486" />
+                    <frame duration="1" hotspotX="0.378788" hotspotY="0.486486" />
+                    <frame duration="1" hotspotX="0.378788" hotspotY="0.486486" />
+                    <frame duration="1" hotspotX="0.378788" hotspotY="0.486486" />
+                    <frame duration="1" hotspotX="0.378788" hotspotY="0.486486" />
+                    <frame duration="1" hotspotX="0.378788" hotspotY="0.486486" />
                 </animation>
             </animation-folder>
         </object-type>

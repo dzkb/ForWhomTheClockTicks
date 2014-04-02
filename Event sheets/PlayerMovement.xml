@@ -111,7 +111,7 @@
                     <param id="1" name="Value">&quot;Idle&quot;</param>
                 </action>
                 <action id="4" name="Set animation" sid="7009287570947818" type="MainCharacter">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
