@@ -155,6 +155,7 @@
         <event-sheet>Level1-mainEv.xml</event-sheet>
         <event-sheet>Intro.xml</event-sheet>
         <event-sheet>PlayerMovement.xml</event-sheet>
+        <event-sheet>PlayerInteraction.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="1" />
