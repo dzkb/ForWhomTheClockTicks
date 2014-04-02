@@ -135,6 +135,14 @@
                     <frame duration="1" hotspotX="0.507042" hotspotY="0.507692" />
                     <frame duration="1" hotspotX="0.507042" hotspotY="0.507692" />
                 </animation>
+                <animation framecount="6" loop="0" name="Guitar_Hide" pingpong="0" repeatcount="1" repeatto="0" sid="7392160671963152" speed="8">
+                    <frame duration="1" hotspotX="0.360656" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.360656" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.360656" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.360656" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.360656" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.360656" hotspotY="0.513514" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="DebugTxt" sid="3936939445905886">
