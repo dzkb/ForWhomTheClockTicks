@@ -13,6 +13,10 @@
                     <param id="0" name="Instance variable">FreeToMove</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="4" name="Set animation" sid="1178099481711736" type="MainCharacter">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
     </events>

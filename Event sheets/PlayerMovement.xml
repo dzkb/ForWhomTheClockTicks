@@ -10,11 +10,53 @@
             <actions>
                 <action id="-10" name="Set value" sid="3581246150236385" type="MainCharacter">
                     <param id="0" name="Instance variable">TargetPosX</param>
-                    <param id="1" name="Value">Touch.X</param>
+                    <param id="1" name="Value">round(Touch.X)</param>
                 </action>
                 <action id="-10" name="Set value" sid="1408437764819566" type="MainCharacter">
-                    <param id="0" name="Instance variable">TragetPosY</param>
-                    <param id="1" name="Value">Touch.Y</param>
+                    <param id="0" name="Instance variable">TargetPosY</param>
+                    <param id="1" name="Value">round(Touch.Y)</param>
+                </action>
+                <action id="-10" name="Set value" sid="9723670106794139" type="MainCharacter">
+                    <param id="0" name="Instance variable">State</param>
+                    <param id="1" name="Value">&quot;Walking&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="25487534835886">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6638654202846725" type="MainCharacter">
+                    <param id="0" name="Instance variable">State</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Walking&quot;</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="846084702871576" type="MainCharacter">
+                    <param id="0" name="Instance variable">TargetPosX</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">MainCharacter.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="4822962704819814" type="MainCharacter">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5620060533566127">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4847250030656282" type="MainCharacter">
+                    <param id="0" name="Instance variable">State</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Walking&quot;</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1092800277694577" type="MainCharacter">
+                    <param id="0" name="Instance variable">TargetPosX</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">MainCharacter.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="2563785384332022" type="MainCharacter">
+                    <param id="0" name="State">1</param>
                 </action>
             </actions>
         </event-block>
@@ -24,45 +66,58 @@
                 <condition id="-8" name="Is boolean instance variable set" sid="6432265615201136" type="MainCharacter">
                     <param id="0" name="Instance variable">FreeToMove</param>
                 </condition>
+                <condition id="-7" name="Compare instance variable" sid="5632004834385709" type="MainCharacter">
+                    <param id="0" name="Instance variable">State</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Walking&quot;</param>
+                </condition>
             </conditions>
             <actions>
-                <action behavior="CustomMovement" id="0" name="Stop" sid="2467807540961037" type="MainCharacter" />
+                <action behavior="CustomMovement" id="0" name="Stop" sid="6160885621749714" type="MainCharacter" />
                 <action behavior="CustomMovement" id="5" name="Accelerate toward position" sid="8791898133013818" type="MainCharacter">
-                    <param id="0" name="Acceleration">10000</param>
+                    <param id="0" name="Acceleration">5000</param>
                     <param id="1" name="X">MainCharacter.TargetPosX</param>
-                    <param id="2" name="Y">MainCharacter.TragetPosY</param>
+                    <param id="2" name="Y">MainCharacter.TargetPosY</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="4737372430412996">
+        <event-block sid="4196747011795105">
             <conditions>
-                <condition id="-1" name="Every tick" sid="5030659250950274" type="System" />
-                <condition behavior="CustomMovement" id="0" name="Is moving" sid="9487528477003787" type="MainCharacter" />
-                <condition id="-7" name="Compare instance variable" sid="4345951583139163" type="MainCharacter">
+                <condition id="-1" name="Every tick" sid="7596432341412858" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="2332460703517512" type="MainCharacter">
+                    <param id="0" name="Instance variable">State</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Walking&quot;</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6355796315436211" type="MainCharacter">
                     <param id="0" name="Instance variable">TargetPosX</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">MainCharacter.X</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">round(MainCharacter.X)</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="8334245355427828" type="MainCharacter">
+                    <param id="0" name="Instance variable">TargetPosY</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">round(MainCharacter.Y)</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="738085378342943" type="MainCharacter">
-                    <param id="0" name="State">1</param>
+                <action behavior="CustomMovement" id="0" name="Stop" sid="3333288452736358" type="MainCharacter" />
+                <action id="-10" name="Set value" sid="20608086523374" type="MainCharacter">
+                    <param id="0" name="Instance variable">State</param>
+                    <param id="1" name="Value">&quot;Idle&quot;</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="5774199289901345">
+        <event-block sid="9009069176663411">
             <conditions>
-                <condition id="-1" name="Every tick" sid="6869556503116481" type="System" />
-                <condition behavior="CustomMovement" id="0" name="Is moving" sid="5147214679168525" type="MainCharacter" />
-                <condition id="-7" name="Compare instance variable" sid="6553807675885001" type="MainCharacter">
-                    <param id="0" name="Instance variable">TargetPosX</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">MainCharacter.X</param>
-                </condition>
+                <condition id="-1" name="Every tick" sid="7430210387896976" type="System" />
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="8191629068428091" type="MainCharacter">
-                    <param id="0" name="State">0</param>
+                <action id="0" name="Set text" sid="6799821233078873" type="DebugTxt">
+                    <param id="0" name="Text">MainCharacter.State</param>
+                </action>
+                <action id="0" name="Set text" sid="4998767047750047" type="DebugTxt2">
+                    <param id="0" name="Text">MainCharacter.TargetPosX &amp; &quot; &quot; &amp; round(MainCharacter.X)</param>
                 </action>
             </actions>
         </event-block>

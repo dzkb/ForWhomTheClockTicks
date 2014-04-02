@@ -81,12 +81,14 @@
                         <FreeToMove>false</FreeToMove>
                         <Zmienna>Zmienna</Zmienna>
                         <TargetPosX>0</TargetPosX>
-                        <TragetPosY>0</TragetPosY>
+                        <TargetPosY>0</TargetPosY>
+                        <State>Idle</State>
+                        <GoingRight>true</GoingRight>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">
                             <properties>
-                                <stepping-mode>None</stepping-mode>
+                                <stepping-mode>Horizontal then vertical</stepping-mode>
                                 <pixels-per-step>5</pixels-per-step>
                                 <initial-state>Enabled</initial-state>
                             </properties>
