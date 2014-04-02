@@ -116,6 +116,37 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="9762429019657764">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7112265452737014" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="1657498917710302" type="MainCharacter">
+                    <param id="0" name="Instance variable">State</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Walking&quot;</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="1456407913878943" type="System">
+                    <param id="0" name="First value">abs(MainCharacter.TargetPosX - MainCharacter.X)</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">MainCharacter.PositionTollerance</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="4051143418992374" type="System">
+                    <param id="0" name="First value">abs(MainCharacter.TargetPosY - MainCharacter.Y)</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">MainCharacter.PositionTollerance</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="0" name="Stop" sid="5609196336938907" type="MainCharacter" />
+                <action id="-10" name="Set value" sid="2282611760053947" type="MainCharacter">
+                    <param id="0" name="Instance variable">State</param>
+                    <param id="1" name="Value">&quot;Idle&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="347883236550661" type="MainCharacter">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="9009069176663411">
             <conditions>
                 <condition id="-1" name="Every tick" sid="7430210387896976" type="System" />

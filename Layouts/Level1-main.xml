@@ -41,6 +41,7 @@
                         <TargetPosY>0</TargetPosY>
                         <State>Idle</State>
                         <GoingRight>true</GoingRight>
+                        <PositionTollerance>1</PositionTollerance>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">

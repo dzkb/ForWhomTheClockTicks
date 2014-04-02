@@ -85,6 +85,7 @@
                 <instance-variable name="TargetPosY" sid="5421250822001197" type="number" />
                 <instance-variable name="State" sid="3222997678229707" type="string" />
                 <instance-variable comment="Czy Gienek idzie w prawo?" name="GoingRight" sid="7875728397400353" type="boolean" />
+                <instance-variable name="PositionTollerance" sid="3286502922153591" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="CustomMovement" sid="9743297867633814">
