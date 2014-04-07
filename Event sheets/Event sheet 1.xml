@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Lives" sid="2845542129331579" static="0" type="number">5</variable>
+        <variable constant="0" name="Score" sid="9357728533745307" static="0" type="number">0</variable>
         <event-block sid="3777589198423545">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="2541492417259823" type="System" />
@@ -12,9 +14,11 @@
                     <param id="0" name="This image point">1</param>
                     <param id="1" name="Object">Block</param>
                 </action>
-                <action behavior="Physics" id="11" name="Create revolute joint" sid="9895863382138933" type="LowerArm">
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="9895863382138933" type="LowerArm">
                     <param id="0" name="This image point">1</param>
                     <param id="1" name="Object">UpperArm</param>
+                    <param id="2" name="Lower angle">-160</param>
+                    <param id="3" name="Upper angle">0</param>
                 </action>
                 <action behavior="Physics" id="11" name="Create revolute joint" sid="4681468025953343" type="Sprite">
                     <param id="0" name="This image point">1</param>
@@ -33,6 +37,12 @@
                     <param id="2" name="Y">Mouse.Y</param>
                     <param id="3" name="Image point">0</param>
                 </action>
+                <action id="0" name="Set text" sid="3942008507074453" type="Score">
+                    <param id="0" name="Text">Score</param>
+                </action>
+                <action id="0" name="Set text" sid="8352978877045098" type="Lives">
+                    <param id="0" name="Text">Lives</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="4950634363696555">
@@ -49,9 +59,41 @@
                 </action>
                 <action behavior="Physics" id="0" name="Apply force" sid="3720762910307279" type="EnemyBlock">
                     <param id="0" name="Force X">1000</param>
-                    <param id="1" name="Force Y">100</param>
+                    <param id="1" name="Force Y">random(-500, 100)</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="-10" name="Add to" sid="9349335297893463" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6044136397197928">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="5534077669127512" type="EnemyBlock" />
+                <condition id="-1" name="Compare X" sid="3638314472808595" type="EnemyBlock">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">LayoutWidth</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="4350412900537533" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8138194628416118" type="EnemyBlock" />
+            </actions>
+        </event-block>
+        <event-block sid="8400093841466053">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="3664871010085279" type="EnemyBlock" />
+                <condition id="-1" name="Compare X" sid="4793915781748886" type="EnemyBlock">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6053236717315938" type="EnemyBlock" />
             </actions>
         </event-block>
     </events>
