@@ -20,9 +20,15 @@
                     <param id="2" name="Lower angle">-160</param>
                     <param id="3" name="Upper angle">0</param>
                 </action>
-                <action behavior="Physics" id="11" name="Create revolute joint" sid="4681468025953343" type="Sprite">
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="4681468025953343" type="Sprite">
                     <param id="0" name="This image point">1</param>
                     <param id="1" name="Object">LowerArm</param>
+                    <param id="2" name="Lower angle">-60</param>
+                    <param id="3" name="Upper angle">60</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="4461481573362719" type="Block">
+                    <param id="0" name="Object">EnemyBlock</param>
+                    <param id="1" name="State">0</param>
                 </action>
             </actions>
         </event-block>

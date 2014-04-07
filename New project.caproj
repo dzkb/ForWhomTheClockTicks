@@ -54,9 +54,19 @@
             </container>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6235185288781248" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Up" x="0.1" y="0.5" />
-                        <image-point name="Down" x="0.9" y="0.52" />
+                    <frame duration="1" hotspotX="0.496504" hotspotY="0.5">
+                        <image-point name="Up" x="0.902098" y="0.5" />
+                        <image-point name="Down" x="0.0909091" y="0.30303" />
+                        <collision-poly>
+                            <point x="0.993007" y="0.5" />
+                            <point x="0.909091" y="0.80303" />
+                            <point x="0.503497" y="0.924242" />
+                            <point x="0.132867" y="0.712121" />
+                            <point x="0.034965" y="0.5" />
+                            <point x="0.0629371" y="0.136364" />
+                            <point x="0.503497" y="0.0454545" />
+                            <point x="0.867133" y="0.287879" />
+                        </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
@@ -74,8 +84,18 @@
             </container>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1096723975403171" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Pivot1" x="0.1" y="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692">
+                        <image-point name="Pivot1" x="0.896104" y="0.507692" />
+                        <collision-poly>
+                            <point x="0.987013" y="0.492308" />
+                            <point x="0.902597" y="0.769231" />
+                            <point x="0.5" y="0.876923" />
+                            <point x="0.155844" y="0.630769" />
+                            <point x="0.025974" y="0.492308" />
+                            <point x="0.0844156" y="0.2" />
+                            <point x="0.5" y="0.107692" />
+                            <point x="0.928571" y="0.169231" />
+                        </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
@@ -129,15 +149,16 @@
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5199221781861049" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Pivot1" x="0.932692" y="0.44" />
                         <collision-poly>
-                            <point x="0.078125" y="0.078125" />
-                            <point x="0.5" y="0" />
-                            <point x="0.9375" y="0.0625" />
-                            <point x="1" y="0.5" />
-                            <point x="0.9375" y="0.9375" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0625" y="0.9375" />
-                            <point x="0" y="0.5" />
+                            <point x="0.980769" y="0.5" />
+                            <point x="0.826923" y="0.64" />
+                            <point x="0.5" y="0.8" />
+                            <point x="0.0961539" y="0.8" />
+                            <point x="0.0961539" y="0.5" />
+                            <point x="0.115385" y="0.24" />
+                            <point x="0.5" y="0.04" />
+                            <point x="0.884615" y="0.24" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -217,6 +238,25 @@
         </object-type>
         <object-type name="Lives" sid="2284395002674504">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="torso" sid="9135668930779819">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2697414237388026" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.976994" y="0.5" />
+                            <point x="0.788344" y="0.713693" />
+                            <point x="0.5" y="0.848548" />
+                            <point x="0.0153374" y="0.979253" />
+                            <point x="0.338957" y="0.5" />
+                            <point x="0.33589" y="0.454357" />
+                            <point x="0.5" y="0.40249" />
+                            <point x="0.843558" y="0.211618" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
