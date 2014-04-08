@@ -78,10 +78,10 @@
                         <x>510</x>
                         <y>205</y>
                         <z>0</z>
-                        <width>143</width>
-                        <height>66</height>
+                        <width>144</width>
+                        <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.496503502</hotspotX>
+                        <hotspotX>0.506944418</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -117,10 +117,10 @@
                         <y>200</y>
                         <z>0</z>
                         <width>154</width>
-                        <height>65</height>
+                        <height>61</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.507692337</hotspotY>
+                        <hotspotY>0.508196712</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -230,11 +230,11 @@
                         <x>296</x>
                         <y>197</y>
                         <z>0</z>
-                        <width>76.828826904</width>
-                        <height>38.135593414</height>
+                        <width>75.351348877</width>
+                        <height>34.322032928</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.51111114</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -250,7 +250,7 @@
                         <behavior-instance type="Physics">
                             <properties>
                                 <immovable>No</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
+                                <collision-mask>Circle</collision-mask>
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>

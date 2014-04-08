@@ -11,7 +11,7 @@
             </conditions>
             <actions>
                 <action behavior="Physics" id="11" name="Create revolute joint" sid="4786363438235477" type="UpperArm">
-                    <param id="0" name="This image point">1</param>
+                    <param id="0" name="This image point">2</param>
                     <param id="1" name="Object">Block</param>
                 </action>
                 <action behavior="Physics" id="22" name="Create limited revolute joint" sid="9895863382138933" type="LowerArm">
