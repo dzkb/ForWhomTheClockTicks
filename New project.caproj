@@ -238,11 +238,11 @@
         <object-type name="Lives" sid="2284395002674504">
             <plugin id="Text" />
         </object-type>
-        <object-type name="torso" sid="9135668930779819">
+        <object-type name="Bakground" sid="7131619527491774">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2697414237388026" speed="5">
-                    <frame duration="1" hotspotX="-0.857843" hotspotY="0.122671" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5488237019908718" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500726" />
                 </animation>
             </animation-folder>
         </object-type>

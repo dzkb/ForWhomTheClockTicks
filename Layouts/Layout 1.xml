@@ -27,7 +27,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="torso" uid="10">
+                <instance type="Bakground" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -37,14 +37,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1419</x>
-                        <y>-9</y>
+                        <x>-195</x>
+                        <y>-8</y>
                         <z>0</z>
-                        <width>1224</width>
-                        <height>644</height>
+                        <width>2095.353759766</width>
+                        <height>1127.889648438</height>
                         <depth>0</depth>
-                        <hotspotX>-0.857843161</hotspotX>
-                        <hotspotY>0.122670807</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.500725687</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
