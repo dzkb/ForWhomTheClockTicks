@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
+    <name>AdamsApple</name>
     <description></description>
     <version>1.0.0.0</version>
     <author></author>
@@ -114,7 +114,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Block" sid="991628022102451">
+        <object-type name="ArmAnchor" sid="991628022102451">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Physics" sid="6363243084640929">
@@ -138,7 +138,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="7784628235218429">
+        <object-type name="Palm" sid="7784628235218429">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Physics" sid="8155645244701422">
@@ -166,7 +166,7 @@
         <object-type name="Mouse" sid="5662970225461003">
             <plugin id="Mouse" />
         </object-type>
-        <object-type name="EnemyBlock" sid="7611728504677843">
+        <object-type name="Apple" sid="7611728504677843">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Physics" sid="699404504383227">
@@ -186,40 +186,6 @@
                             <point x="0.15625" y="0.84375" />
                             <point x="0.015625" y="0.5" />
                         </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="pole" sid="7496192342388964">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Physics" sid="2403752896115179">
-                    <behavior id="Physics" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4213360068534961" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Pivot1" x="0.1" y="0.5" />
-                        <image-point name="Pivot2" x="0.91" y="0.52" />
-                        <image-point name="Pivot3" x="0.5" y="0" />
-                        <image-point name="Pivot4" x="0.5" y="1" />
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Joiner" sid="2723496431859593">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Physics" sid="188953808052081">
-                    <behavior id="Physics" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7397753376949157" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Pivot1" x="0.08" y="0.508" />
-                        <image-point name="Pivot2" x="0.924" y="0.504" />
                     </frame>
                 </animation>
             </animation-folder>
@@ -249,10 +215,13 @@
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout>Layout 1.xml</layout>
+        <layout>Gameplay.xml</layout>
+        <layout>Menu.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>ControlsEV.xml</event-sheet>
+        <event-sheet>MenuEV.xml</event-sheet>
+        <event-sheet>GameplayEV.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="5" />

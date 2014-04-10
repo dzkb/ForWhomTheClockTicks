@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
+    <name>Gameplay</name>
     <sid>886839494951149</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>GameplayEV</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -163,7 +163,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Block" uid="3">
+                <instance type="ArmAnchor" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -201,7 +201,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="4">
+                <instance type="Palm" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -239,7 +239,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="EnemyBlock" uid="6">
+                <instance type="Apple" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
