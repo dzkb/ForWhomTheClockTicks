@@ -13,8 +13,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout>Gameplay</layout>
         <layout>Menu</layout>
         <event-sheet>ControlsEV</event-sheet>
-        <event-sheet>GameplayEV</event-sheet>
-        <event-sheet active="1">MenuEV</event-sheet>
+        <event-sheet active="1">GameplayEV</event-sheet>
+        <event-sheet>MenuEV</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
