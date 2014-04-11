@@ -192,6 +192,48 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="Green" pingpong="0" repeatcount="1" repeatto="0" sid="8263395189269057" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.025" />
+                            <point x="0.875" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0.025" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Rotten" pingpong="0" repeatcount="1" repeatto="0" sid="8984798407085381" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.025" />
+                            <point x="0.85" y="0.15" />
+                            <point x="0.975" y="0.5" />
+                            <point x="0.825" y="0.825" />
+                            <point x="0.5" y="0.975" />
+                            <point x="0.175" y="0.825" />
+                            <point x="0.025" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Red" pingpong="0" repeatcount="1" repeatto="0" sid="6153832295368828" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.175" y="0.175" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.825" y="0.825" />
+                            <point x="0.5" y="0.975" />
+                            <point x="0.175" y="0.825" />
+                            <point x="0.025" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Spawner" sid="1070841802104848">
@@ -288,7 +330,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="3492561701797159">
+        <object-type name="ScoreScroll" sid="3492561701797159">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8683574360906391" speed="5">
@@ -309,6 +351,68 @@
         </object-type>
         <object-type name="Music" sid="4601389314772731">
             <plugin id="Audio" />
+        </object-type>
+        <object-type name="EveTorso" sid="4384894901927077">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="7636127319572701">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2379405108343921" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.713992" y="0.5" />
+                            <point x="0.5" y="0.998408" />
+                            <point x="0.425926" y="0.835191" />
+                            <point x="0.228395" y="0.5" />
+                            <point x="0.36214" y="0.140127" />
+                            <point x="0.5" y="0.00955414" />
+                            <point x="0.648148" y="0.136147" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EveArm" sid="4676215398042855">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="4300567673312772">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3645441903557051" speed="5">
+                    <frame duration="1" hotspotX="0.503597" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.733813" y="0.839623" />
+                        <image-point name="Imagepoint 2" x="0.201439" y="0.188679" />
+                        <collision-poly>
+                            <point x="0.345324" y="0.5" />
+                            <point x="0.863309" y="0.910377" />
+                            <point x="0.503597" y="0.896226" />
+                            <point x="0.330935" y="0.783019" />
+                            <point x="0.0791367" y="0.5" />
+                            <point x="0.107914" y="0.0707547" />
+                            <point x="0.503597" y="0.0235849" />
+                            <point x="0.345324" y="0.429245" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EveArmHolder" sid="4103118353552777">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="4259994595309071">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8863442849943982" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

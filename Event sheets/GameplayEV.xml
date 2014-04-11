@@ -34,29 +34,6 @@
                 <action id="-9" name="Destroy" sid="2564275713881165" type="RedApple" />
             </actions>
         </event-block>
-        <event-block sid="1110390610959922">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="9581405988547022" type="System">
-                    <param id="0" name="Interval (seconds)">random(2,3)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="7517576825040126" type="Spawner">
-                    <param id="0" name="Object">RedApple</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action behavior="Physics" id="0" name="Apply force" sid="3858180492325722" type="RedApple">
-                    <param id="0" name="Force X">300</param>
-                    <param id="1" name="Force Y">random(-30, 50)</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-10" name="Add to" sid="7291974328444904" type="System">
-                    <param id="0" name="Variable">Score</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="5686627754607049">
             <conditions>
                 <condition id="-4" name="Is outside layout" sid="2334426168034111" type="GreenApple" />
@@ -85,29 +62,6 @@
                 <action id="-9" name="Destroy" sid="9909208811753932" type="GreenApple" />
             </actions>
         </event-block>
-        <event-block sid="3583336405657811">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="331237430766785" type="System">
-                    <param id="0" name="Interval (seconds)">random(8,10)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="8727201978676419" type="Spawner">
-                    <param id="0" name="Object">GreenApple</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action behavior="Physics" id="0" name="Apply force" sid="1706873825933091" type="GreenApple">
-                    <param id="0" name="Force X">300</param>
-                    <param id="1" name="Force Y">random(-30, 50)</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-10" name="Add to" sid="276134244977735" type="System">
-                    <param id="0" name="Variable">Score</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="7005453495372755">
             <conditions>
                 <condition id="-4" name="Is outside layout" sid="3310244645079517" type="RottenApple" />
@@ -134,29 +88,6 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="5503221174287029" type="RottenApple" />
-            </actions>
-        </event-block>
-        <event-block sid="1987347008445293">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="404815922438016" type="System">
-                    <param id="0" name="Interval (seconds)">random(6,10)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="2702352864313131" type="Spawner">
-                    <param id="0" name="Object">RottenApple</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action behavior="Physics" id="0" name="Apply force" sid="1662465776879319" type="RottenApple">
-                    <param id="0" name="Force X">300</param>
-                    <param id="1" name="Force Y">random(-30, 50)</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-10" name="Add to" sid="5754523099870478" type="System">
-                    <param id="0" name="Variable">Score</param>
-                    <param id="1" name="Value">1</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="3889786876433656">
@@ -190,6 +121,92 @@
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="9798280337855186" type="EveArm">
+                    <param id="0" name="This image point">1</param>
+                    <param id="1" name="Object">EveTorso</param>
+                </action>
+                <action behavior="Physics" id="10" name="Create distance joint" sid="9956617948838173" type="EveArm">
+                    <param id="0" name="This image point">2</param>
+                    <param id="1" name="Object">EveArmHolder</param>
+                    <param id="2" name="That image point">0</param>
+                    <param id="3" name="Damping ratio">1</param>
+                    <param id="4" name="Spring frequency">2</param>
+                </action>
+                <action behavior="Physics" id="4" name="Apply impulse towards position" sid="3161762892241251" type="EveArm">
+                    <param id="0" name="Impulse">10</param>
+                    <param id="1" name="X">200</param>
+                    <param id="2" name="Y">0</param>
+                    <param id="3" name="Image point">2</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="2037362736483172" type="EveTorso">
+                    <param id="0" name="Object">Apple</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="517475488210822" type="EveTorso">
+                    <param id="0" name="Object">GreenApple</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="7011413378033779" type="EveTorso">
+                    <param id="0" name="Object">RedApple</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="64328921027843" type="EveTorso">
+                    <param id="0" name="Object">RottenApple</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="2069753353574266" type="EveArm">
+                    <param id="0" name="Object">RottenApple</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="6075171535741739" type="EveArm">
+                    <param id="0" name="Object">Apple</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="8525431025869403" type="EveArm">
+                    <param id="0" name="Object">GreenApple</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="5312851967198287" type="EveArm">
+                    <param id="0" name="Object">RedApple</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1210726150035934">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2180040004097204" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="4" name="Apply impulse towards position" sid="7248221060419817" type="EveArm">
+                    <param id="0" name="Impulse">10</param>
+                    <param id="1" name="X">200</param>
+                    <param id="2" name="Y">0</param>
+                    <param id="3" name="Image point">2</param>
+                </action>
+                <action id="-16" name="Wait" sid="3106620839355754" type="System">
+                    <param id="0" name="Seconds">random(0.065, 0.15)</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6295143586088038" type="EveArm">
+                    <param id="0" name="Object">Apple</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="4" name="Set animation" sid="6543630034509868" type="Apple">
+                    <param id="0" name="Animation">choose(choose(&quot;Default&quot;, &quot;Green&quot;), choose(&quot;Rotten&quot;, &quot;Red&quot;))</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Physics" id="4" name="Apply impulse towards position" sid="4207635746498844" type="Apple">
+                    <param id="0" name="Impulse">-5</param>
+                    <param id="1" name="X">EveArm.ImagePointX(1)</param>
+                    <param id="2" name="Y">EveArm.ImagePointY(1)</param>
+                    <param id="3" name="Image point">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="4407321684612479" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
