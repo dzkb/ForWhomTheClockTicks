@@ -38,14 +38,12 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-31" name="Set layout effect parameter" sid="990171740664584" type="System">
-                    <param id="0" name="Effect">&quot;Brightness&quot;</param>
-                    <param id="1" name="Parameter index">0</param>
-                    <param id="2" name="Value">BrigthnessVal</param>
-                </action>
                 <action id="-11" name="Subtract from" sid="3654054459812187" type="System">
                     <param id="0" name="Variable">BrigthnessVal</param>
                     <param id="1" name="Value">4</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="8156379017699875" type="CultureDisclaimer">
+                    <param id="0" name="Opacity">BrigthnessVal</param>
                 </action>
             </actions>
         </event-block>
