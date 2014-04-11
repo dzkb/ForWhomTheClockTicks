@@ -10,6 +10,7 @@
     <unique-id>43lksvm6uqj5</unique-id>
     <saved-with-version>16300</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -306,6 +307,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Music" sid="4601389314772731">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -322,9 +326,27 @@
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="5" />
+        <global-instance type="Music" uid="21">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder expanded="1" />
-    <music-folder expanded="1" />
+    <music-folder expanded="1">
+        <file name="minuet.m4a" />
+        <file name="minuet.ogg" />
+    </music-folder>
     <files-folder expanded="1">
         <file-folder expanded="0" name="Icons">
             <file name="icon-16.png" />

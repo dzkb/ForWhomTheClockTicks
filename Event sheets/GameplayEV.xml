@@ -185,6 +185,12 @@
                     <param id="0" name="Family name">&quot;cinzelregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
+                <action id="0" name="Play" sid="6457723763035442" type="Music">
+                    <param id="0" name="Audio file">minuet</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>
