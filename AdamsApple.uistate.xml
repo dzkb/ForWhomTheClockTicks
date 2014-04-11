@@ -12,9 +12,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout>Gameplay</layout>
         <layout>Menu</layout>
-        <layout active="1">Intro</layout>
+        <layout>Intro</layout>
         <event-sheet>ControlsEV</event-sheet>
-        <event-sheet>GameplayEV</event-sheet>
+        <event-sheet active="1">GameplayEV</event-sheet>
         <event-sheet>MenuEV</event-sheet>
         <event-sheet>IntroEV</event-sheet>
     </open-tabs>
