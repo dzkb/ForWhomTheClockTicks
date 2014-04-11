@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>IntroEV</name>
     <events>
+        <variable constant="0" name="BrigthnessVal" sid="4275958387873111" static="0" type="number">100</variable>
+        <variable constant="0" name="Fading" sid="3486853930148442" static="0" type="text">No</variable>
         <event-block sid="6568465456767483">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="5998492773243789" type="System" />
@@ -14,6 +16,68 @@
                 </action>
                 <action id="0" name="Set text" sid="64040684744571" type="CultureDisclaimer">
                     <param id="0" name="Text">&quot;Inspired by historical events and characters.&quot; &amp; newline &amp; &quot;This work of fiction was designed, developed and produced&quot; &amp;newline&amp; &quot;by a multicultural team of various religious faiths and beliefs.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="7416584089258113" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="5927176247423206" type="System">
+                    <param id="0" name="Variable">Fading</param>
+                    <param id="1" name="Value">&quot;Yes&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9484549362503091">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8883598083681356" type="System">
+                    <param id="0" name="Interval (seconds)">0.05</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="430364849928295" type="System">
+                    <param id="0" name="Variable">Fading</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Yes&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-31" name="Set layout effect parameter" sid="990171740664584" type="System">
+                    <param id="0" name="Effect">&quot;Brightness&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">BrigthnessVal</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="3654054459812187" type="System">
+                    <param id="0" name="Variable">BrigthnessVal</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6586583029609856">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5185042198773668" type="System" />
+                <condition id="-14" name="Compare variable" sid="6541649634804126" type="System">
+                    <param id="0" name="Variable">BrigthnessVal</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6508701724626362" type="System">
+                    <param id="0" name="Variable">Fading</param>
+                    <param id="1" name="Value">&quot;No&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="316102067347482" type="System">
+                    <param id="0" name="Seconds">0.7</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="6140805507203674" type="System">
+                    <param id="0" name="Layout">Gameplay</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6491453066885357">
+            <conditions>
+                <condition id="1" name="On any click" sid="60924757200305" type="Mouse" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8675456501385662" type="System">
+                    <param id="0" name="Layout">Gameplay</param>
                 </action>
             </actions>
         </event-block>
