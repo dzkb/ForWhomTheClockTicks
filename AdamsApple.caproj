@@ -265,6 +265,25 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite2" sid="3492561701797159">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8683574360906391" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0809249" y="0.191781" />
+                            <point x="0.5" y="0.506849" />
+                            <point x="0.916185" y="0.19863" />
+                            <point x="0.884393" y="0.5" />
+                            <point x="0.959538" y="0.90411" />
+                            <point x="0.5" y="0.705479" />
+                            <point x="0.066474" y="0.842466" />
+                            <point x="0.0404624" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
