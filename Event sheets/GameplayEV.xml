@@ -41,8 +41,8 @@
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action behavior="Physics" id="0" name="Apply force" sid="3858180492325722" type="RedApple">
-                    <param id="0" name="Force X">600</param>
-                    <param id="1" name="Force Y">random(-10, 20)</param>
+                    <param id="0" name="Force X">300</param>
+                    <param id="1" name="Force Y">random(-30, 50)</param>
                     <param id="2" name="Image point">0</param>
                 </action>
             </actions>
@@ -84,8 +84,8 @@
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action behavior="Physics" id="0" name="Apply force" sid="1706873825933091" type="GreenApple">
-                    <param id="0" name="Force X">700</param>
-                    <param id="1" name="Force Y">random(-10, 20)</param>
+                    <param id="0" name="Force X">300</param>
+                    <param id="1" name="Force Y">random(-30, 50)</param>
                     <param id="2" name="Image point">0</param>
                 </action>
             </actions>
@@ -127,8 +127,8 @@
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action behavior="Physics" id="0" name="Apply force" sid="1662465776879319" type="RottenApple">
-                    <param id="0" name="Force X">650</param>
-                    <param id="1" name="Force Y">random(-10, 20)</param>
+                    <param id="0" name="Force X">300</param>
+                    <param id="1" name="Force Y">random(-30, 50)</param>
                     <param id="2" name="Image point">0</param>
                 </action>
             </actions>

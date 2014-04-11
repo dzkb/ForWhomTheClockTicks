@@ -310,7 +310,7 @@
                         <behavior-instance type="Physics">
                             <properties>
                                 <immovable>No</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
+                                <collision-mask>Circle</collision-mask>
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
@@ -348,7 +348,7 @@
                         <behavior-instance type="Physics">
                             <properties>
                                 <immovable>No</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
+                                <collision-mask>Circle</collision-mask>
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
@@ -386,7 +386,7 @@
                         <behavior-instance type="Physics">
                             <properties>
                                 <immovable>No</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
+                                <collision-mask>Circle</collision-mask>
                                 <prevent-rotation>No</prevent-rotation>
                                 <density>1</density>
                                 <friction>0.5</friction>
