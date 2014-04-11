@@ -57,9 +57,9 @@
             </container>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6235185288781248" speed="5">
-                    <frame duration="1" hotspotX="0.505682" hotspotY="0.507692">
-                        <image-point name="Up" x="0.0738636" y="0.384615" />
-                        <image-point name="Down" x="0.835227" y="0.415385" />
+                    <frame duration="1" hotspotX="0.511364" hotspotY="0.515152">
+                        <image-point name="Up" x="0.0681818" y="0.393939" />
+                        <image-point name="Down" x="0.840909" y="0.424242" />
                         <collision-poly>
                             <point x="0.982955" y="0.492308" />
                             <point x="0.914773" y="0.769231" />
@@ -86,8 +86,8 @@
             </container>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1096723975403171" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197">
-                        <image-point name="Pivot1" x="0.88961" y="0.409836" />
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.516129">
+                        <image-point name="Pivot1" x="0.896104" y="0.419355" />
                         <collision-poly>
                             <point x="0.987013" y="0.491803" />
                             <point x="0.902597" y="0.754098" />
@@ -150,8 +150,8 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5199221781861049" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111">
-                        <image-point name="Pivot1" x="0.911765" y="0.488889" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.521739">
+                        <image-point name="Pivot1" x="0.921569" y="0.478261" />
                         <collision-poly>
                             <point x="0.980392" y="0.488889" />
                             <point x="0.862745" y="0.688889" />
@@ -211,7 +211,7 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5488237019908718" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500726" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501449" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -223,6 +223,45 @@
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5645297905460638" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RedApple" sid="9529404480533698">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="1639792499073633">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1724087053680386" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GreenApple" sid="3969389117922814">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="5483219391019">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="258567706660465" speed="5">
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.6" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RottenApple" sid="2770135681730845">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="9560065568897463">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4937194639548679" speed="5">
+                    <frame duration="1" hotspotX="0.575" hotspotY="0.475" />
                 </animation>
             </animation-folder>
         </object-type>
