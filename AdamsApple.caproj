@@ -212,16 +212,21 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="CultureDisclaimer" sid="9612699349587161">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
         <layout>Gameplay.xml</layout>
         <layout>Menu.xml</layout>
+        <layout>Intro.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>ControlsEV.xml</event-sheet>
         <event-sheet>MenuEV.xml</event-sheet>
         <event-sheet>GameplayEV.xml</event-sheet>
+        <event-sheet>IntroEV.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="5" />
@@ -237,5 +242,10 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
+        <file name="cinzel-webfont.eot" />
+        <file name="cinzel-webfont.svg" />
+        <file name="cinzel-webfont.ttf" />
+        <file name="cinzel-webfont.woff" />
+        <file name="stylesheet.css" />
     </files-folder>
 </c2project>
