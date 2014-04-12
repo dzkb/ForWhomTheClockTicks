@@ -6,17 +6,15 @@
         <variable constant="0" name="Lives" sid="8826361522620213" static="0" type="number">5</variable>
         <variable constant="0" name="Score" sid="4104726855862394" static="0" type="number">0</variable>
         <include>ControlsEV</include>
-        <event-block sid="6375153901070759">
+        <event-block sid="3034940660947024">
             <conditions>
-                <condition id="-4" name="Is outside layout" sid="8194663860153587" type="Apple" />
-                <condition id="-1" name="Compare X" sid="4151960667142624" type="Apple">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">LayoutWidth</param>
+                <condition id="0" name="On collision with another object" sid="6627894186416165" type="Apple">
+                    <param id="0" name="Object">AppleDestoyer</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="1397291985149863" type="Apple" />
-                <action id="-11" name="Subtract from" sid="7143939674236693" type="System">
+                <action id="-9" name="Destroy" sid="7596743746807089" type="Apple" />
+                <action id="-11" name="Subtract from" sid="3244146211060295" type="System">
                     <param id="0" name="Variable">Lives</param>
                     <param id="1" name="Value">1</param>
                 </action>
@@ -24,7 +22,6 @@
         </event-block>
         <event-block sid="7763693710192361">
             <conditions>
-                <condition id="-4" name="Is outside layout" sid="1451686488806017" type="Apple" />
                 <condition id="-1" name="Compare X" sid="4401975134910261" type="Apple">
                     <param id="0" name="Comparison">2</param>
                     <param id="1" name="X co-ordinate">0</param>
@@ -36,7 +33,6 @@
         </event-block>
         <event-block sid="1259015634337788">
             <conditions>
-                <condition id="-4" name="Is outside layout" sid="6363938448538463" type="Apple" />
                 <condition id="-2" name="Compare Y" sid="7674324637962489" type="Apple">
                     <param id="0" name="Comparison">4</param>
                     <param id="1" name="Y co-ordinate">LayoutHeight</param>

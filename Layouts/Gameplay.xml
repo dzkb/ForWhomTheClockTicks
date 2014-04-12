@@ -75,10 +75,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>665.735168457</x>
-                        <y>489.608276367</y>
+                        <x>664.737060547</x>
+                        <y>489.668518066</y>
                         <z>0</z>
-                        <width>377</width>
+                        <width>375</width>
                         <height>42</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -666,6 +666,28 @@
                         <hotspotX>0.517241359</hotspotX>
                         <hotspotY>0.517241359</hotspotY>
                         <angle>-0.413376659</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="AppleDestoyer" uid="30">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>925</x>
+                        <y>86.5</y>
+                        <z>0</z>
+                        <width>30</width>
+                        <height>939</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
