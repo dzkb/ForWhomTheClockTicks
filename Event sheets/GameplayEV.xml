@@ -161,12 +161,6 @@
                     <param id="3" name="Damping ratio">1</param>
                     <param id="4" name="Spring frequency">2</param>
                 </action>
-                <action behavior="Physics" id="4" name="Apply impulse towards position" sid="3161762892241251" type="EveArm">
-                    <param id="0" name="Impulse">10</param>
-                    <param id="1" name="X">200</param>
-                    <param id="2" name="Y">0</param>
-                    <param id="3" name="Image point">2</param>
-                </action>
                 <action behavior="Physics" id="23" name="Enable/disable collisions" sid="2037362736483172" type="EveTorso">
                     <param id="0" name="Object">Apple</param>
                     <param id="1" name="State">0</param>
