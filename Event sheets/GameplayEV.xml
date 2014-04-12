@@ -203,7 +203,7 @@
             </conditions>
             <actions>
                 <action behavior="Physics" id="4" name="Apply impulse towards position" sid="7248221060419817" type="EveArm">
-                    <param id="0" name="Impulse">9</param>
+                    <param id="0" name="Impulse">10</param>
                     <param id="1" name="X">200</param>
                     <param id="2" name="Y">0</param>
                     <param id="3" name="Image point">2</param>
