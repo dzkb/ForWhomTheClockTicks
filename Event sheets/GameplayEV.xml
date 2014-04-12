@@ -6,90 +6,6 @@
         <variable constant="0" name="Lives" sid="8826361522620213" static="0" type="number">5</variable>
         <variable constant="0" name="Score" sid="4104726855862394" static="0" type="number">0</variable>
         <include>ControlsEV</include>
-        <event-block sid="5019397189042104">
-            <conditions>
-                <condition id="-4" name="Is outside layout" sid="1708296334661167" type="RedApple" />
-                <condition id="-1" name="Compare X" sid="7036490230862283" type="RedApple">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">LayoutWidth</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="6639342669950995" type="RedApple" />
-                <action id="-11" name="Subtract from" sid="477830878093583" type="System">
-                    <param id="0" name="Variable">Lives</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="9664401705291292">
-            <conditions>
-                <condition id="-4" name="Is outside layout" sid="1857757546200052" type="RedApple" />
-                <condition id="-1" name="Compare X" sid="8164710684540959" type="RedApple">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="2564275713881165" type="RedApple" />
-            </actions>
-        </event-block>
-        <event-block sid="5686627754607049">
-            <conditions>
-                <condition id="-4" name="Is outside layout" sid="2334426168034111" type="GreenApple" />
-                <condition id="-1" name="Compare X" sid="7359021054046941" type="GreenApple">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">LayoutWidth</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="4285549270551395" type="GreenApple" />
-                <action id="-11" name="Subtract from" sid="938171537392284" type="System">
-                    <param id="0" name="Variable">Lives</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8177238626822627">
-            <conditions>
-                <condition id="-4" name="Is outside layout" sid="7106610946304337" type="GreenApple" />
-                <condition id="-1" name="Compare X" sid="3144801217005049" type="GreenApple">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="9909208811753932" type="GreenApple" />
-            </actions>
-        </event-block>
-        <event-block sid="7005453495372755">
-            <conditions>
-                <condition id="-4" name="Is outside layout" sid="3310244645079517" type="RottenApple" />
-                <condition id="-1" name="Compare X" sid="8655643396400698" type="RottenApple">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">LayoutWidth</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="9148284641444717" type="RottenApple" />
-                <action id="-11" name="Subtract from" sid="1946746644621711" type="System">
-                    <param id="0" name="Variable">Lives</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="7456915260776166">
-            <conditions>
-                <condition id="-4" name="Is outside layout" sid="2176462100614837" type="RottenApple" />
-                <condition id="-1" name="Compare X" sid="4652139743051219" type="RottenApple">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="5503221174287029" type="RottenApple" />
-            </actions>
-        </event-block>
         <event-block sid="6375153901070759">
             <conditions>
                 <condition id="-4" name="Is outside layout" sid="8194663860153587" type="Apple" />
@@ -116,6 +32,22 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="9680379958036022" type="Apple" />
+            </actions>
+        </event-block>
+        <event-block sid="1259015634337788">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="6363938448538463" type="Apple" />
+                <condition id="-2" name="Compare Y" sid="7674324637962489" type="Apple">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">LayoutHeight</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="2831200976696768" type="Apple">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">LayoutWidth</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9013124448120657" type="Apple" />
             </actions>
         </event-block>
         <event-block sid="3889786876433656">
