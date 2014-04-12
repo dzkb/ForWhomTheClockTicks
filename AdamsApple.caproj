@@ -47,7 +47,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-type name="UpperArm" sid="5111288373995403">
+        <object-type name="AdamUpperarm" sid="5111288373995403">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Physics" sid="2103009827336952">
@@ -55,28 +55,29 @@
                 </behavior-type>
             </behaviors>
             <container>
-                <type>LowerArm</type>
-                <type>UpperArm</type>
+                <type>AdamLowerArm</type>
+                <type>AdamUpperarm</type>
             </container>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6235185288781248" speed="5">
-                    <frame duration="1" hotspotX="0.511364" hotspotY="0.515152">
-                        <image-point name="Up" x="0.0681818" y="0.393939" />
-                        <image-point name="Down" x="0.840909" y="0.424242" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5">
+                        <image-point name="Up" x="0.0641026" y="0.4" />
+                        <image-point name="Down" x="0.846154" y="0.433333" />
                         <collision-poly>
-                            <point x="0.982955" y="0.492308" />
-                            <point x="0.914773" y="0.769231" />
-                            <point x="0.5" y="0.953846" />
-                            <point x="0.0965909" y="0.738462" />
-                            <point x="0.0170454" y="0.492308" />
-                            <point x="0.0625" y="0.169231" />
-                            <point x="0.931818" y="0.184615" />
+                            <point x="0.0769231" y="0.2" />
+                            <point x="0.5" y="0.133333" />
+                            <point x="0.948718" y="0.133333" />
+                            <point x="0.987179" y="0.5" />
+                            <point x="0.897436" y="0.733333" />
+                            <point x="0.5" y="0.966667" />
+                            <point x="0.102564" y="0.733333" />
+                            <point x="0.025641" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="LowerArm" sid="5014124240824434">
+        <object-type name="AdamLowerArm" sid="5014124240824434">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Physics" sid="1460072306486113">
@@ -84,22 +85,22 @@
                 </behavior-type>
             </behaviors>
             <container>
-                <type>LowerArm</type>
-                <type>UpperArm</type>
+                <type>AdamLowerArm</type>
+                <type>AdamUpperarm</type>
             </container>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1096723975403171" speed="5">
-                    <frame duration="1" hotspotX="0.506494" hotspotY="0.516129">
-                        <image-point name="Pivot1" x="0.896104" y="0.419355" />
+                    <frame duration="1" hotspotX="0.5125" hotspotY="0.515152">
+                        <image-point name="Pivot1" x="0.9" y="0.424242" />
                         <collision-poly>
-                            <point x="0.987013" y="0.491803" />
-                            <point x="0.902597" y="0.754098" />
-                            <point x="0.5" y="0.901639" />
-                            <point x="0.149351" y="0.622951" />
-                            <point x="0.025974" y="0.491803" />
-                            <point x="0.0779221" y="0.196721" />
-                            <point x="0.5" y="0.0983607" />
-                            <point x="0.941558" y="0.147541" />
+                            <point x="0.0875" y="0.212121" />
+                            <point x="0.5" y="0.0606061" />
+                            <point x="0.9375" y="0.151515" />
+                            <point x="0.975" y="0.484848" />
+                            <point x="0.8875" y="0.727273" />
+                            <point x="0.5" y="0.878788" />
+                            <point x="0.15" y="0.636364" />
+                            <point x="0.0125" y="0.484848" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -120,7 +121,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="ArmAnchor" sid="991628022102451">
+        <object-type name="AdamArmAnchor" sid="991628022102451">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Physics" sid="6363243084640929">
@@ -144,7 +145,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Palm" sid="7784628235218429">
+        <object-type name="AdamPalm" sid="7784628235218429">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Physics" sid="8155645244701422">
@@ -153,17 +154,17 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5199221781861049" speed="5">
-                    <frame duration="1" hotspotX="0.509804" hotspotY="0.521739">
-                        <image-point name="Pivot1" x="0.921569" y="0.478261" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.517241">
+                        <image-point name="Pivot1" x="0.793103" y="0.310345" />
                         <collision-poly>
-                            <point x="0.980392" y="0.488889" />
-                            <point x="0.862745" y="0.688889" />
-                            <point x="0.5" y="0.844444" />
-                            <point x="0.107843" y="0.755556" />
-                            <point x="0.0784314" y="0.488889" />
-                            <point x="0.0882353" y="0.2" />
-                            <point x="0.5" y="0.0222222" />
-                            <point x="0.872549" y="0.288889" />
+                            <point x="0.172414" y="0.344828" />
+                            <point x="0.5" y="0.137931" />
+                            <point x="0.931035" y="0.137931" />
+                            <point x="0.706897" y="0.482759" />
+                            <point x="0.724138" y="0.448276" />
+                            <point x="0.5" y="0.689655" />
+                            <point x="0.155172" y="0.689655" />
+                            <point x="0.12069" y="0.482759" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -256,7 +257,7 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5488237019908718" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501449" />
+                    <frame duration="1" hotspotX="0.500339" hotspotY="0.50125" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -479,6 +480,33 @@
                             <point x="0.00217391" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AdamTorso" sid="9669817853832063">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="896088974385668" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.315951" y="0.429167" />
+                            <point x="0.5" y="0.4125" />
+                            <point x="0.846626" y="0.208333" />
+                            <point x="0.96319" y="0.5" />
+                            <point x="0.776074" y="0.695833" />
+                            <point x="0.5" y="0.8375" />
+                            <point x="0.0184049" y="0.975" />
+                            <point x="0.328221" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AdamSeat" sid="5210364450853228">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5717594008580764" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

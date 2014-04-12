@@ -8,23 +8,23 @@
                 <condition id="-2" name="On start of layout" sid="2541492417259823" type="System" />
             </conditions>
             <actions>
-                <action behavior="Physics" id="11" name="Create revolute joint" sid="4786363438235477" type="UpperArm">
+                <action behavior="Physics" id="11" name="Create revolute joint" sid="4786363438235477" type="AdamUpperarm">
                     <param id="0" name="This image point">2</param>
-                    <param id="1" name="Object">ArmAnchor</param>
+                    <param id="1" name="Object">AdamArmAnchor</param>
                 </action>
-                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="9895863382138933" type="LowerArm">
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="9895863382138933" type="AdamLowerArm">
                     <param id="0" name="This image point">1</param>
-                    <param id="1" name="Object">UpperArm</param>
+                    <param id="1" name="Object">AdamUpperarm</param>
                     <param id="2" name="Lower angle">-160</param>
                     <param id="3" name="Upper angle">0</param>
                 </action>
-                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="4681468025953343" type="Palm">
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="4681468025953343" type="AdamPalm">
                     <param id="0" name="This image point">1</param>
-                    <param id="1" name="Object">LowerArm</param>
+                    <param id="1" name="Object">AdamLowerArm</param>
                     <param id="2" name="Lower angle">-60</param>
                     <param id="3" name="Upper angle">60</param>
                 </action>
-                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="4461481573362719" type="ArmAnchor">
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="4461481573362719" type="AdamArmAnchor">
                     <param id="0" name="Object">Apple</param>
                     <param id="1" name="State">0</param>
                 </action>
@@ -35,7 +35,7 @@
                 <condition id="-1" name="Every tick" sid="216812281763551" type="System" />
             </conditions>
             <actions>
-                <action behavior="Physics" id="1" name="Apply force towards position" sid="2692981341332957" type="Palm">
+                <action behavior="Physics" id="1" name="Apply force towards position" sid="2692981341332957" type="AdamPalm">
                     <param id="0" name="Force">200</param>
                     <param id="1" name="X">Mouse.X</param>
                     <param id="2" name="Y">Mouse.Y</param>
