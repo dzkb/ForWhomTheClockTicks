@@ -456,8 +456,8 @@
         <event-sheet>PauseEV.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="5" />
-        <global-instance type="Music" uid="21">
+        <global-instance type="Mouse" uid="21" />
+        <global-instance type="Music" uid="25">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
