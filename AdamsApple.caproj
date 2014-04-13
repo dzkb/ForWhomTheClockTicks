@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
@@ -610,14 +611,29 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Start" sid="5012033567296021">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8286911092561237" speed="5">
+                    <frame duration="1" hotspotX="0.528302" hotspotY="0.460106" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StartText" sid="3615342097996149">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Menu" sid="8083893806504755">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
-    <layout-folder expanded="0">
+    <layout-folder expanded="1">
         <layout>Gameplay.xml</layout>
         <layout>Menu.xml</layout>
         <layout>Intro.xml</layout>
     </layout-folder>
-    <event-folder expanded="0">
+    <event-folder expanded="1">
         <event-sheet>ControlsEV.xml</event-sheet>
         <event-sheet>MenuEV.xml</event-sheet>
         <event-sheet>GameplayEV.xml</event-sheet>

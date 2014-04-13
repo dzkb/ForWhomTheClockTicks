@@ -31,7 +31,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="8675456501385662" type="System">
-                    <param id="0" name="Layout">Gameplay</param>
+                    <param id="0" name="Layout">Menu</param>
                 </action>
             </actions>
         </event-block>
@@ -69,7 +69,7 @@
                     <param id="0" name="Seconds">4</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="8647550672320919" type="System">
-                    <param id="0" name="Layout">Gameplay</param>
+                    <param id="0" name="Layout">Menu</param>
                 </action>
             </actions>
         </event-block>
