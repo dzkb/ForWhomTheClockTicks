@@ -645,6 +645,7 @@
     <families />
     <layout-folder expanded="1">
         <layout>Gameplay.xml</layout>
+        <layout>GameOver.xml</layout>
         <layout>Menu.xml</layout>
         <layout>Intro.xml</layout>
     </layout-folder>
@@ -654,6 +655,7 @@
         <event-sheet>GameplayEV.xml</event-sheet>
         <event-sheet>IntroEV.xml</event-sheet>
         <event-sheet>PauseEV.xml</event-sheet>
+        <event-sheet>GameOverEV.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="21" />
