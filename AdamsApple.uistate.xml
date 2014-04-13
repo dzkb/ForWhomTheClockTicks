@@ -15,13 +15,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout>Intro</layout>
         <event-sheet>ControlsEV</event-sheet>
         <event-sheet>GameplayEV</event-sheet>
-        <event-sheet>MenuEV</event-sheet>
-        <event-sheet active="1">IntroEV</event-sheet>
+        <event-sheet active="1">MenuEV</event-sheet>
+        <event-sheet>IntroEV</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
-        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1" />

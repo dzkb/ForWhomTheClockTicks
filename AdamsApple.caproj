@@ -614,8 +614,10 @@
         <object-type name="Start" sid="5012033567296021">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8286911092561237" speed="5">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8286911092561237" speed="5">
                     <frame duration="1" hotspotX="0.528302" hotspotY="0.460106" />
+                    <frame duration="1" hotspotX="0.518389" hotspotY="0.456731" />
+                    <frame duration="1" hotspotX="0.518389" hotspotY="0.456731" />
                 </animation>
             </animation-folder>
         </object-type>
