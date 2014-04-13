@@ -557,7 +557,7 @@
             </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="unmuted" pingpong="0" repeatcount="1" repeatto="0" sid="319812838195797" speed="5">
-                    <frame duration="1" hotspotX="0.49789" hotspotY="0.50365">
+                    <frame duration="1" hotspotX="0.50211" hotspotY="0.50365">
                         <collision-poly>
                             <point x="0.995781" y="0.49635" />
                             <point x="0.873418" y="0.781022" />
@@ -565,13 +565,13 @@
                             <point x="0.164557" y="0.715328" />
                             <point x="0.35865" y="0.49635" />
                             <point x="0.21097" y="0.364964" />
-                            <point x="0.50211" y="0.0875912" />
+                            <point x="0.50211" y="0.0948905" />
                             <point x="0.864979" y="0.233577" />
                         </collision-poly>
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="muted" pingpong="0" repeatcount="1" repeatto="0" sid="9429585542358937" speed="5">
-                    <frame duration="1" hotspotX="0.49789" hotspotY="0.50365">
+                    <frame duration="1" hotspotX="0.50211" hotspotY="0.50365">
                         <collision-poly>
                             <point x="0.995781" y="0.49635" />
                             <point x="0.873418" y="0.781022" />
