@@ -87,85 +87,34 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="adamHand" uid="5">
+                <instance type="logo" uid="5">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <collisions>Disabled</collisions>
+                        <collisions>Enabled</collisions>
                     </properties>
-                    <instance-variables>
-                        <Variable1>false</Variable1>
-                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Fade">
                             <properties>
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>1</fade-in-time>
-                                <wait-time>4</wait-time>
-                                <fade-out-time>1</fade-out-time>
+                                <wait-time>2</wait-time>
+                                <fade-out-time>2</fade-out-time>
                                 <destroy>No</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Rotate">
-                            <properties>
-                                <speed>180</speed>
-                                <acceleration>0</acceleration>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>393.422363281</x>
-                        <y>158.678039551</y>
+                        <x>373</x>
+                        <y>163</y>
                         <z>0</z>
-                        <width>144.850021362</width>
-                        <height>144.135299683</height>
+                        <width>205.421157837</width>
+                        <height>201.765975952</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.499173552</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="godHand" uid="26">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Disabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Variable1>false</Variable1>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>1</fade-in-time>
-                                <wait-time>4</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>No</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Rotate">
-                            <properties>
-                                <speed>180</speed>
-                                <acceleration>0</acceleration>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>510.369750977</x>
-                        <y>160.909637451</y>
-                        <z>0</z>
-                        <width>112.987754822</width>
-                        <height>112.496513367</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.501779377</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
