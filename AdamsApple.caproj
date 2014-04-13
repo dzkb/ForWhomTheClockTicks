@@ -11,6 +11,7 @@
     <saved-with-version>16300</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -46,7 +47,7 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder expanded="1">
+    <object-folder expanded="0">
         <object-type name="AdamUpperarm" sid="5111288373995403">
             <plugin id="Sprite" />
             <behaviors>
@@ -545,14 +546,53 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="muteButton" sid="7169410127024334">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="muteSprite" sid="3195289312859149">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="clicked" sid="9595707236049408" type="boolean" />
+            </instance-variables>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="unmuted" pingpong="0" repeatcount="1" repeatto="0" sid="319812838195797" speed="5">
+                    <frame duration="1" hotspotX="0.49789" hotspotY="0.50365">
+                        <collision-poly>
+                            <point x="0.995781" y="0.49635" />
+                            <point x="0.873418" y="0.781022" />
+                            <point x="0.50211" y="0.562044" />
+                            <point x="0.164557" y="0.715328" />
+                            <point x="0.35865" y="0.49635" />
+                            <point x="0.21097" y="0.364964" />
+                            <point x="0.50211" y="0.0875912" />
+                            <point x="0.864979" y="0.233577" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="muted" pingpong="0" repeatcount="1" repeatto="0" sid="9429585542358937" speed="5">
+                    <frame duration="1" hotspotX="0.49789" hotspotY="0.50365">
+                        <collision-poly>
+                            <point x="0.995781" y="0.49635" />
+                            <point x="0.873418" y="0.781022" />
+                            <point x="0.50211" y="1" />
+                            <point x="0.164557" y="0.715328" />
+                            <point x="0.244726" y="0.49635" />
+                            <point x="0.21097" y="0.364964" />
+                            <point x="0.50211" y="0.00729927" />
+                            <point x="0.864979" y="0.233577" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
-    <layout-folder expanded="1">
+    <layout-folder expanded="0">
         <layout>Gameplay.xml</layout>
         <layout>Menu.xml</layout>
         <layout>Intro.xml</layout>
     </layout-folder>
-    <event-folder expanded="1">
+    <event-folder expanded="0">
         <event-sheet>ControlsEV.xml</event-sheet>
         <event-sheet>MenuEV.xml</event-sheet>
         <event-sheet>GameplayEV.xml</event-sheet>
@@ -578,11 +618,11 @@
         </global-instance>
     </global-instances>
     <sounds-folder expanded="1" />
-    <music-folder expanded="1">
+    <music-folder expanded="0">
         <file name="minuet.m4a" />
         <file name="minuet.ogg" />
     </music-folder>
-    <files-folder expanded="1">
+    <files-folder expanded="0">
         <file-folder expanded="0" name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
