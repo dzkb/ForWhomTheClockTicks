@@ -47,7 +47,7 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder expanded="0">
+    <object-folder expanded="1">
         <object-type name="AdamUpperarm" sid="5111288373995403">
             <plugin id="Sprite" />
             <behaviors>
@@ -584,6 +584,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="MuteText" sid="9754410936691011">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

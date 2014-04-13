@@ -130,6 +130,10 @@
                     <param id="0" name="Variable">GameState</param>
                     <param id="1" name="Value">&quot;active&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="2430502335118181" type="MuteText">
+                    <param id="0" name="Family name">&quot;cinzelregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="1210726150035934">
@@ -200,6 +204,9 @@
                     <param id="0" name="Instance variable">clicked</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="0" name="Set text" sid="3317149559772098" type="MuteText">
+                    <param id="0" name="Text">&quot;Mute&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3541308306775044">
@@ -227,6 +234,9 @@
                 <action id="-13" name="Set boolean" sid="6224814589011131" type="muteSprite">
                     <param id="0" name="Instance variable">clicked</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="2510208461838899" type="MuteText">
+                    <param id="0" name="Text">&quot;Unmute&quot;</param>
                 </action>
             </actions>
         </event-block>
