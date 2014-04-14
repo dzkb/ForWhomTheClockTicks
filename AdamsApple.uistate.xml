@@ -12,8 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout>Gameplay</layout>
         <layout>Menu</layout>
-        <layout>Intro</layout>
-        <layout active="1">GameOver</layout>
+        <layout active="1">Intro</layout>
+        <layout>GameOver</layout>
         <layout>ScoreScreen</layout>
         <event-sheet>ControlsEV</event-sheet>
         <event-sheet>GameplayEV</event-sheet>
