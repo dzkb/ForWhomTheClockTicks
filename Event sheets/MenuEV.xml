@@ -10,12 +10,6 @@
                 <condition id="-2" name="On start of layout" sid="9245838705005647" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="337316591992886" type="Music">
-                    <param id="0" name="Audio file">minuet</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="2" name="Stop" sid="6105741819392727" type="Start" />
                 <action id="5" name="Set web font" sid="8592790898186901" type="StartText">
                     <param id="0" name="Family name">&quot;cinzelregular&quot;</param>

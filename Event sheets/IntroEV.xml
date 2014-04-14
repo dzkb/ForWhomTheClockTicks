@@ -61,6 +61,12 @@
                 <condition behavior="Fade" id="0" name="On fade out finished" sid="6857226040073985" type="GameName" />
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="5314189065494536" type="Music">
+                    <param id="0" name="Audio file">minuet</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="7744405327778776" type="System">
                     <param id="0" name="Layout">Menu</param>
                 </action>

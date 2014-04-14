@@ -6,7 +6,7 @@
         <include>MuteButtonEV</include>
         <variable constant="0" name="EveInterval" sid="6856040217013507" static="0" type="number">120</variable>
         <variable constant="0" name="GameState" sid="8603370990974035" static="0" type="text">&quot;inactive&quot;</variable>
-        <variable constant="0" name="Lives" sid="8826361522620213" static="0" type="number">1</variable>
+        <variable constant="0" name="Lives" sid="8826361522620213" static="0" type="number">5</variable>
         <variable constant="0" name="Score" sid="4104726855862394" static="0" type="number">0</variable>
         <include>ControlsEV</include>
         <event-block sid="3034940660947024">
