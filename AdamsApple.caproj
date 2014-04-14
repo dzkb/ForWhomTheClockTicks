@@ -542,7 +542,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="AppleDestoyer" sid="7147833351622734">
+        <object-type name="AppleLeftCatcher" sid="7147833351622734">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4791143259476113" speed="5">
@@ -831,6 +831,74 @@
         </object-type>
         <object-type name="TryAgainText" sid="6588908729301117">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="AppleRightCatcher" sid="3706486367925451">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2745772008417029" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AppleBottomCatcher" sid="7304949898882503">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1150724304952675" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Roof" sid="9548785219966002">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="2474746276813754">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3568924946884421" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="6.63158" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AppleBottomIndicator" sid="3571935375989408">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1836126178805878">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4454713860251194" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-6.875" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AppleLeftIndicator" sid="3977812517530281">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="4562131085079397">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6829318850104859" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-6.875" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AppleRightIndicator" sid="1974670044355763">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1495609055331407">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5274982866645485" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-6.875" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

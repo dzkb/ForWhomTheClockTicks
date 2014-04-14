@@ -12,7 +12,7 @@
         <event-block sid="3034940660947024">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="6627894186416165" type="Apple">
-                    <param id="0" name="Object">AppleDestoyer</param>
+                    <param id="0" name="Object">AppleLeftCatcher</param>
                 </condition>
             </conditions>
             <actions>
@@ -21,32 +21,37 @@
                     <param id="0" name="Variable">Lives</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="3325906459866751" type="AppleLeftIndicator" />
             </actions>
         </event-block>
-        <event-block sid="7763693710192361">
+        <event-block sid="1773982861805199">
             <conditions>
-                <condition id="-1" name="Compare X" sid="4401975134910261" type="Apple">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">0</param>
+                <condition id="0" name="On collision with another object" sid="2529495128112726" type="Apple">
+                    <param id="0" name="Object">AppleRightCatcher</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="9680379958036022" type="Apple" />
+                <action id="-9" name="Destroy" sid="1653638037985912" type="Apple" />
+                <action behavior="Fade" id="1" name="Start fade" sid="8129120464982447" type="AppleRightIndicator" />
+                <action id="-10" name="Add to" sid="2514632972733488" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
-        <event-block sid="1259015634337788">
+        <event-block sid="1607164936820473">
             <conditions>
-                <condition id="-2" name="Compare Y" sid="7674324637962489" type="Apple">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">LayoutHeight</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="2831200976696768" type="Apple">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">LayoutWidth</param>
+                <condition id="0" name="On collision with another object" sid="6964059799449807" type="Apple">
+                    <param id="0" name="Object">AppleBottomCatcher</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="9013124448120657" type="Apple" />
+                <action id="-9" name="Destroy" sid="7264976131442125" type="Apple" />
+                <action behavior="Fade" id="1" name="Start fade" sid="4860063305836198" type="AppleBottomIndicator" />
+                <action id="-10" name="Add to" sid="8806878513943986" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3889786876433656">
@@ -184,10 +189,6 @@
                     <param id="1" name="X">EveArm.ImagePointX(1)</param>
                     <param id="2" name="Y">EveArm.ImagePointY(1)</param>
                     <param id="3" name="Image point">0</param>
-                </action>
-                <action id="-10" name="Add to" sid="4407321684612479" type="System">
-                    <param id="0" name="Variable">Score</param>
-                    <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="1924322385219918" type="Music">
                     <param id="0" name="Audio file">60009__qubodup__swosh-22</param>
