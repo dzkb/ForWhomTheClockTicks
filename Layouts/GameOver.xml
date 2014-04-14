@@ -682,6 +682,61 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="GodSaysCloud" uid="77">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-106.342567444</x>
+                        <y>81.13923645</y>
+                        <z>0</z>
+                        <width>101.561729431</width>
+                        <height>62.149719238</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50497514</hotspotX>
+                        <hotspotY>0.471544713</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="GodSays" uid="76">
+                    <properties>
+                        <text>Out!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-21,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-141.998443604</x>
+                        <y>55.918579102</y>
+                        <z>0</z>
+                        <width>85.04863739</width>
+                        <height>45.777832031</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="Sprite" uid="68">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>

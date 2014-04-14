@@ -806,6 +806,37 @@
         <object-type name="SkipText" sid="7657394092090375">
             <plugin id="Text" />
         </object-type>
+        <object-type name="GodSays" sid="1093991425489957">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="3472967623083276">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="GodSaysCloud" sid="7252979101619392">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="1402704229182431">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8135871427168681" speed="5">
+                    <frame duration="1" hotspotX="0.504975" hotspotY="0.471545">
+                        <collision-poly>
+                            <point x="0.99005" y="0.5" />
+                            <point x="0.838308" y="0.735772" />
+                            <point x="0.00248754" y="0.995935" />
+                            <point x="0.176617" y="0.5" />
+                            <point x="0.20398" y="0.333333" />
+                            <point x="0.5" y="0.0121951" />
+                            <point x="0.90796" y="0.150407" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
