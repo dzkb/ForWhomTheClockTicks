@@ -23,6 +23,10 @@
                 <action id="0" name="Set text" sid="9924452738699491" type="Score">
                     <param id="0" name="Text">Score</param>
                 </action>
+                <action id="5" name="Set web font" sid="5166199508447568" type="TryAgainText">
+                    <param id="0" name="Family name">&quot;cinzelregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6637363496845506">
