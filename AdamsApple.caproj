@@ -777,10 +777,23 @@
         <object-type name="GameName" sid="5588003314279885">
             <plugin id="Text" />
             <behaviors>
-                <behavior-type name="Fade" sid="552933680801967">
+                <behavior-type name="Fade" sid="3839288816956623">
                     <behavior id="Fade" />
                 </behavior-type>
             </behaviors>
+        </object-type>
+        <object-type name="MenuFade" sid="9202969640786347">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="6118613616651701">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8022608605152252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

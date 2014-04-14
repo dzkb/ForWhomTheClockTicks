@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>IntroEV</name>
     <events>
-        <variable constant="0" name="Pass" sid="6768063015269042" static="0" type="text">&quot;No&quot;</variable>
         <event-block sid="6568465456767483">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="5998492773243789" type="System" />
@@ -40,23 +39,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="5589814724863774">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="4270844248771457" type="System">
-                    <param id="0" name="Variable">Pass</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;Yes&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-16" name="Wait" sid="2896781535809744" type="System">
-                    <param id="0" name="Seconds">5</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="8647550672320919" type="System">
-                    <param id="0" name="Layout">Menu</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="7244850798856695">
             <conditions>
                 <condition behavior="Fade" id="0" name="On fade out finished" sid="6209021338467471" type="CultureDisclaimer" />
@@ -71,15 +53,15 @@
                 <condition behavior="Fade" id="0" name="On fade out finished" sid="1919245403617269" type="StudioName" />
             </conditions>
             <actions>
-                <action behavior="Fade" id="1" name="Start fade" sid="8907898333411919" type="GameName" />
+                <action behavior="Fade" id="1" name="Start fade" sid="8025422810212745" type="GameName" />
             </actions>
         </event-block>
-        <event-block sid="795107109646016">
+        <event-block sid="8404747879895909">
             <conditions>
-                <condition behavior="Fade" id="0" name="On fade out finished" sid="9545182138147338" type="GameName" />
+                <condition behavior="Fade" id="0" name="On fade out finished" sid="6857226040073985" type="GameName" />
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="5681565286760294" type="System">
+                <action id="-2" name="Go to layout" sid="7744405327778776" type="System">
                     <param id="0" name="Layout">Menu</param>
                 </action>
             </actions>

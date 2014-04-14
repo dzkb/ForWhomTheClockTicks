@@ -27,7 +27,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite" uid="16">
+                <instance type="Sprite" uid="74">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -37,11 +37,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>432</x>
-                        <y>236</y>
+                        <x>444.5</x>
+                        <y>247.5</y>
                         <z>0</z>
-                        <width>874</width>
-                        <height>498</height>
+                        <width>943</width>
+                        <height>559</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -181,7 +181,7 @@
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>2</fade-in-time>
                                 <wait-time>2</wait-time>
-                                <fade-out-time>3</fade-out-time>
+                                <fade-out-time>2</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
