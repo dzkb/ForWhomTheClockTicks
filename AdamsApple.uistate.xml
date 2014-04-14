@@ -18,12 +18,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout>Tutorial</layout>
         <event-sheet>ControlsEV</event-sheet>
         <event-sheet>GameplayEV</event-sheet>
-        <event-sheet active="1">MenuEV</event-sheet>
+        <event-sheet>MenuEV</event-sheet>
         <event-sheet>IntroEV</event-sheet>
         <event-sheet>GameOverEV</event-sheet>
         <event-sheet>MuteButtonEV</event-sheet>
         <event-sheet>ScoreScreenEV</event-sheet>
-        <event-sheet>TutorialEV</event-sheet>
+        <event-sheet active="1">TutorialEV</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
