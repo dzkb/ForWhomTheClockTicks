@@ -12,7 +12,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout>Gameplay</layout>
         <layout>Menu</layout>
-        <layout active="1">Intro</layout>
+        <layout>Intro</layout>
         <layout>GameOver</layout>
         <layout>ScoreScreen</layout>
         <layout>Tutorial</layout>
@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet>GameOverEV</event-sheet>
         <event-sheet>MuteButtonEV</event-sheet>
         <event-sheet>ScoreScreenEV</event-sheet>
-        <event-sheet>TutorialEV</event-sheet>
+        <event-sheet active="1">TutorialEV</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

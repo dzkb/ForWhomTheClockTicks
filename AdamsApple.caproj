@@ -795,6 +795,17 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Skip" sid="2130205117492617">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5686988708569631" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501048" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SkipText" sid="7657394092090375">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
