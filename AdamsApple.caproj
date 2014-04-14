@@ -900,6 +900,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="GoToMenuText" sid="2107602851628794">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">

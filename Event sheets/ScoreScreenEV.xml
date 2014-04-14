@@ -27,18 +27,53 @@
                     <param id="0" name="Family name">&quot;cinzelregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="4222356538663984" type="GoToMenuText">
+                    <param id="0" name="Family name">&quot;cinzelregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6637363496845506">
             <conditions>
-                <condition id="0" name="On click" sid="6648578563550472" type="Mouse">
+                <condition id="6" name="On object clicked" sid="6648578563550472" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">TryAgainText</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="302133599468995" type="System">
                     <param id="0" name="Layout">Tutorial</param>
+                </action>
+                <action id="-9" name="Set value" sid="2026849870731677" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-9" name="Set value" sid="3347030777768895" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8417003831009855">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5317458617829702" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GoToMenuText</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2152437054454879" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+                <action id="-9" name="Set value" sid="5506012361861572" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-9" name="Set value" sid="7889403443850816" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
