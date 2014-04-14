@@ -710,7 +710,11 @@
             </properties>
         </global-instance>
     </global-instances>
-    <sounds-folder expanded="1" />
+    <sounds-folder expanded="1">
+        <file name="60009__qubodup__swosh-22.m4a" />
+        <file name="60009__qubodup__swosh-22.ogg" />
+        <file name="60009__qubodup__swosh-22.wav" />
+    </sounds-folder>
     <music-folder expanded="0">
         <file name="minuet.m4a" />
         <file name="minuet.ogg" />
