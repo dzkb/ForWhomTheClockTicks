@@ -47,6 +47,12 @@
                     <param id="2" name="Y">0</param>
                     <param id="3" name="Image point">0</param>
                 </action>
+                <action id="0" name="Play" sid="9596969047193806" type="Music">
+                    <param id="0" name="Audio file">73581__benboncan__sad-trombone</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="2996200364027186">
