@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MuteButtonEV</name>
+    <events>
+        <event-block sid="7731142739430206">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9215553761596289" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">muteSprite</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="5358474550171954" type="muteSprite">
+                    <param id="0" name="Animation">&quot;muted&quot;</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7135088076749193" type="muteSprite">
+                    <param id="0" name="Instance variable">clicked</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7295992391717897" type="muteSprite">
+                    <param id="0" name="Animation">&quot;unmuted&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="8" name="Set silent" sid="2408960772673003" type="Music">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="2145758404339029" type="muteSprite">
+                    <param id="0" name="Instance variable">clicked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="3304507899405433" type="MuteText">
+                    <param id="0" name="Text">&quot;Mute&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1316181943938594">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6192885511453165" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">muteSprite</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="6331268776592471" type="muteSprite">
+                    <param id="0" name="Animation">&quot;unmuted&quot;</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="80350516699927" type="muteSprite">
+                    <param id="0" name="Instance variable">clicked</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set silent" sid="290942618806747" type="Music">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="497893043779932" type="muteSprite">
+                    <param id="0" name="Animation">&quot;muted&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="6443601502068398" type="muteSprite">
+                    <param id="0" name="Instance variable">clicked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="762165998783091" type="MuteText">
+                    <param id="0" name="Text">&quot;Unmute&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="119697107364871">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8716508721515277" type="System" />
+                <condition id="3" name="Is silent" sid="2489792855223157" type="Music" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7936877349707396" type="muteSprite">
+                    <param id="0" name="Animation">&quot;muted&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="9542133380101823" type="MuteText">
+                    <param id="0" name="Text">&quot;Unmute&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6582862476443791">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2071297863810017" type="System" />
+                <condition id="3" inverted="1" name="Is silent" sid="5080289497339795" type="Music" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4873277261979797" type="muteSprite">
+                    <param id="0" name="Animation">&quot;unmuted&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="3175540995531184" type="MuteText">
+                    <param id="0" name="Text">&quot;Mute&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

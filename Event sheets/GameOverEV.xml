@@ -3,17 +3,76 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameOverEV</name>
     <events>
+        <include>MuteButtonEV</include>
         <include>ControlsEV</include>
-        <event-block sid="4317201839285168">
+        <event-block sid="5532808687170994">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="1768706600338595" type="System" />
+                <condition id="-2" name="On start of layout" sid="2965625796693785" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="5488682990854122" type="Music">
-                    <param id="0" name="Audio file">73581__benboncan__sad-trombone</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="7113488994620934" type="EveArm">
+                    <param id="0" name="This image point">1</param>
+                    <param id="1" name="Object">EveTorso</param>
+                    <param id="2" name="Lower angle">0</param>
+                    <param id="3" name="Upper angle">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="2620365649865977" type="EveLeaf">
+                    <param id="0" name="Pin to">EveTorso</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="474246507951875" type="AdamLeaf">
+                    <param id="0" name="Pin to">AdamTorso</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="5" name="Set web font" sid="7138205242710613" type="Score">
+                    <param id="0" name="Family name">&quot;cinzelregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="2920044640027358" type="ScoreIndicator">
+                    <param id="0" name="Family name">&quot;cinzelregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="4753947736773452" type="Score">
+                    <param id="0" name="Text">Score</param>
+                </action>
+                <action behavior="Physics" id="4" name="Apply impulse towards position" sid="2418974346045353" type="EveTorso">
+                    <param id="0" name="Impulse">20</param>
+                    <param id="1" name="X">-200</param>
+                    <param id="2" name="Y">0</param>
+                    <param id="3" name="Image point">2</param>
+                </action>
+                <action behavior="Physics" id="4" name="Apply impulse towards position" sid="6357194596384042" type="EveTorso">
+                    <param id="0" name="Impulse">50</param>
+                    <param id="1" name="X">-200</param>
+                    <param id="2" name="Y">0</param>
+                    <param id="3" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2996200364027186">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="8653003651611857" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="1786340075480781" type="Sprite">
+                    <param id="0" name="Opacity">Sprite.Opacity+1</param>
+                </action>
+                <action id="-3" name="Set position" sid="1994144173439842" type="God">
+                    <param id="0" name="X">God.X+(sqrt(400-God.X)/2)</param>
+                    <param id="1" name="Y">God.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4607932597248847">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="4511853063158211" type="Sprite">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2906732794309061" type="System">
+                    <param id="0" name="Layout">ScoreScreen</param>
                 </action>
             </actions>
         </event-block>
