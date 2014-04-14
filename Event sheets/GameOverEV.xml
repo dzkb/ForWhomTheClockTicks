@@ -4,5 +4,18 @@
     <name>GameOverEV</name>
     <events>
         <include>ControlsEV</include>
+        <event-block sid="4317201839285168">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1768706600338595" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5488682990854122" type="Music">
+                    <param id="0" name="Audio file">73581__benboncan__sad-trombone</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
