@@ -115,34 +115,12 @@
                         <opacity>0</opacity>
                     </world>
                 </instance>
-                <instance type="Skip" uid="16">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>101</x>
-                        <y>348</y>
-                        <z>0</z>
-                        <width>109.666732788</width>
-                        <height>83.297821045</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501048207</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="SkipText" uid="75">
                     <properties>
-                        <text>Skip</text>
+                        <text>Click to skip...</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-37,400,0</font>
-                        <color>0,102,0</color>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -152,11 +130,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>71</x>
-                        <y>325</y>
+                        <x>14</x>
+                        <y>416</y>
                         <z>0</z>
-                        <width>103</width>
-                        <height>67</height>
+                        <width>252</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

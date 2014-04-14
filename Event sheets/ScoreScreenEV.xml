@@ -25,5 +25,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="6637363496845506">
+            <conditions>
+                <condition id="0" name="On click" sid="6648578563550472" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="302133599468995" type="System">
+                    <param id="0" name="Layout">Tutorial</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

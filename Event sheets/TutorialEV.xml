@@ -23,28 +23,13 @@
         </event-block>
         <event-block sid="8932361172719636">
             <conditions>
-                <condition id="6" name="On object clicked" sid="8826372120376302" type="Mouse">
+                <condition id="0" name="On click" sid="7471075208711617" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Skip</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="4278895163815178" type="System">
-                    <param id="0" name="Layout">Gameplay</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="7843422783302176">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="2517406885777969" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">SkipText</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="3646290486676975" type="System">
                     <param id="0" name="Layout">Gameplay</param>
                 </action>
             </actions>
