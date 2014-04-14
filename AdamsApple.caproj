@@ -756,6 +756,7 @@
         <layout>Menu.xml</layout>
         <layout>Intro.xml</layout>
         <layout>ScoreScreen.xml</layout>
+        <layout>Tutorial.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>ControlsEV.xml</event-sheet>
@@ -766,6 +767,7 @@
         <event-sheet>GameOverEV.xml</event-sheet>
         <event-sheet>MuteButtonEV.xml</event-sheet>
         <event-sheet>ScoreScreenEV.xml</event-sheet>
+        <event-sheet>TutorialEV.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="21" />
