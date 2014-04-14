@@ -758,6 +758,30 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="StudioName" sid="4738049068751158">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="7471899083136738">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Presents" sid="2685813436668038">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="7069536997564718">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="GameName" sid="5588003314279885">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="552933680801967">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
