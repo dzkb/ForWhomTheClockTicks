@@ -34,6 +34,12 @@
                 <condition id="1" name="On any click" sid="60924757200305" type="Mouse" />
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="8402783188672215" type="Music">
+                    <param id="0" name="Audio file">minuet</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="8675456501385662" type="System">
                     <param id="0" name="Layout">Menu</param>
                 </action>
